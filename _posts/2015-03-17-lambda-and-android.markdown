@@ -2,6 +2,7 @@
 layout: post
 title:  Java 8的Lambda及其在Android 开发中的应用
 date:   2015-03-17 13:51:09 UTC
+comments: true
 ---
 ###Lambda的介绍，及其在Android中的应用
 上次在盆友圈发了一张照片
