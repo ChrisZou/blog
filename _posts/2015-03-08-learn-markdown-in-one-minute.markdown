@@ -33,9 +33,9 @@ hello **world**！
 图片与链接之间的区别是，在前面多了一个"!"  
 ![链接描述]\(image_url)  
 将显示image_url所链接到的那个图片，如：  
-![美国队长]\(http://chriszou.com/ca.jpg)  
+![美国队长]\(http://chriszou.com/images/ca.jpg)  
 将显示：  
-![美国队长](http://chriszou.com/ca.jpg)
+![美国队长](http://chriszou.com/images/ca.jpg)
 
 ### 5. 标题
 如果你想让文字变得粗大，像文章的标题一样，可以在前面加上“\#”，如  
