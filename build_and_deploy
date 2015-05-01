@@ -1,2 +1,3 @@
+#!/bin/zsh
 jk build
 scp -r _site/* chris@aliyun:/var/www/blog/
