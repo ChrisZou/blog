@@ -4,6 +4,7 @@ title:  "博客换回Jekyll，顺带简介一下Jekyll"
 date:   2015-05-01 15:21
 categories: jekyll
 comments: true
+excerpt_separator: <!--more-->
 ---
 
 个人网站开起来有一段时间了，当时目标是每周写一篇文章，不过到现在也没写多少篇哈哈。。
@@ -11,6 +12,7 @@ comments: true
 于是乎，又想到了Jekyll，心想像Jekyll这样一个popular的博客引擎，应该有很多很漂亮的主题吧，于是搜了一下，找到了[这个](http://jekyllthemes.org/themes/hmfaysal-omega-theme/)，也就是你现在看到的这个，个人感觉这是个非常适合blog的主题，既漂亮，同时也是content focused，于是决定就用这个了。从Rails app搬回Jekyll，最大的遗憾，就是之前的一些评论不能一起搬走，好可惜的感觉！
 
 ### 关于Jekyll
+<!--more-->
 稍微介绍一下[Jekyll](http://jekyllrb.com/)，Jekyll是一个static page generator，应该是如今用的最广泛的吧，因为github pages用的是这个。
 Jekyll的工作原理，类似于一个文本转化器，它的原材料是[markdown](http://www.chriszou.com/learn-markdown-in-one-minute)文本，经过它的转换以后，变成了由HTML/CSS/JS组成的静态页面，这些静态页面产生以后，你把他们放到nginx或apache的root directory，就可以通过互联网访问了。是的，没有“后台”！没有数据库！没有动态代码（除非你把前端的JS代码看作“动态代码”）！！！Everything is static, thus everything is simple!
 
