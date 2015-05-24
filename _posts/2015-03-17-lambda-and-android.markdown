@@ -4,7 +4,7 @@ title:  Java 8的Lambda及其在Android 开发中的应用
 date:   2015-03-17 13:51:09 UTC
 comments: true
 ---
-###Lambda的介绍，及其在Android中的应用
+
 上次在盆友圈发了一张照片
 
 ![lambda_example](http://chriszou.com/images/lambda_example.png)
@@ -76,11 +76,15 @@ Great, 如果没有参数的话，是不是就可以写成：
 ```
 
 呢？
-很可惜，如果没有参数，那么前面的"()"是必须存在的。
+很可惜，如果没有参数，那么前面的"()"是必须存在的。也就是说，必须写成：
+
+```Java
+()-> a+a
+```
 
 #### lambda的用法
-实际上，如果你直接把上面的代码放到你的编辑器里面，你的IDE是会报错的，因为lambda是不能这样使用的。lambda的使用永远要跟一个叫做Functional Interface的东西绑定在一起。什么叫Functional Interface呢？Functional Interface也是Java8 中引入的概念，是的，是为了lambda。我们知道java中的interface，而Functional Interface就是一个”只有一个抽象方法”interface。比如Runnable，这个interface只有一个run方法。
-那么或许你要问了，什么叫只有一个**抽象**方法的interface？interface中的方法不都是抽象的吗？well，在java8以前是这样的，而在java8中，Java引进了*default method*的概念，就是带有具体实现的方法：
+实际上，如果你直接把上面的代码放到你的编辑器里面，你的IDE是会报错的，因为lambda是不能这样使用的。lambda的使用永远要跟一个叫做`Functional Interface`的东西绑定在一起。什么叫`Functional Interface`呢？`Functional Interface`也是Java8 中引入的概念，是的，是为了lambda。我们知道java中的`interface`，而`Functional Interface`就是一个“只有一个抽象方法”的`interface`。比如`Runnable` 这个interface就只有一个run方法，那么它就是一个`Functional Interface`。
+那么或许你要问了，什么叫只有一个**抽象**方法的interface？interface中的方法不都是抽象的吗？Well，在java8以前是这样的，而在java8中，Java引进了*default method*的概念，就是带有具体实现的方法：
 
 ```java
 public interface DuckInterface {
