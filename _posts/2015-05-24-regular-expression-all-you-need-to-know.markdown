@@ -12,7 +12,7 @@ Regular expressions are nuts. You spent lots of time studying them and later whe
 ## Abbreviations used in this post  
   
 RE for regular expression.        
-`/regular_expression_content/`     
+`/regular_expression_content/`   regular_expression_content is the text of a regular expression, The two "/" is there to indicate the this string is used as a regular expression, rather than a normal string.   
 `<=>`   means “equals”, or “is the same as”.    
 `=~`    means perform the match action. For example: `/\d+/ =~ “hello, 123!”` means match `“hello, 123!”` against the regular expression `\d+`.    
 `#=>`   The content after `#=>` is the result of the matches before it.     
