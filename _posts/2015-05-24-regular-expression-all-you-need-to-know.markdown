@@ -29,7 +29,7 @@ Example:
   
 A character class is a set of characters inside a square bracket “[]”: `[abcdefg]`.    
 A character class matches any **single** characters consists of it. So `/[abcdefg]/` matches any single characters among ‘a’, ‘b’, ‘c’, ..., ‘g’.    
-You can use ‘-‘ to define a range for a  character class: [a-g], [a-z], [a-Z], [0-9], etc.    
+You can use ‘-‘ to define a range for a  character class: [a-g], [a-z], [A-Z], [0-9], etc.    
 Some  character classes are so commonly used that they made some *shortcuts* for them:    
 \s <=> any space character, including ‘ ‘, tab and newline character.      
 \S <=> any character expect space character(‘ ‘, tab and newline character)    
@@ -52,7 +52,8 @@ Anchors are characters that specify a position. Commonly known are “^” which
 \A&nbsp; &nbsp; &nbsp;  the start of a string    
 \Z&nbsp; &nbsp; &nbsp;  the end of a string    
 \b&nbsp; &nbsp; &nbsp;  the start or end of a word    
-\B&nbsp; &nbsp; &nbsp;  some place other than the start or end of a word.    
+\B&nbsp; &nbsp; &nbsp;  some place other than the start or end of a word.  
+The difference between \A(\Z) and ^($)? Well, a string may contain several lines.  
   
   
 ## Repetitions specifier  
