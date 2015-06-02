@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+require 'date'
+
+# Create the appropriate file name in date-title format 
+# and generate the header atomatically
+
+if(ARGV.length==0)
+    puts "Usage: ruby #{__FILE__} title}"
+    exit(1)
+end
+
+title = ARGV[0]
+date = Date.today.to_s
+file = "#{date}-#{title}.md"
+path = "_posts/#{file}"
+
+header_content = %(---
+layout: post
+title: 
+date: #{DateTime.now.to_s}
+comments: true
+---
+)
+
+File.open(path, 'w') do |f|
+    f.write(header_content)
+end
+
