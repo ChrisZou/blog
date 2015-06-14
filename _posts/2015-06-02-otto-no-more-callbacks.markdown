@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Otto: No More Callbacks
+title: "Otto: No More Callbacks"
 date: 2015-06-02T10:21:07+08:00
 comments: true
 ---
