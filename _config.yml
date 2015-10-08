@@ -1,6 +1,6 @@
 title:            Chris
 description:      "Live your life"
-logo:             omikron.png
+logo:             ca_small.jgp
 disqus_shortname: chriszou
 # Assign a default image for your site's header and footer
 default_bg:       default_bg1.jpg
@@ -94,15 +94,9 @@ prose:
           placeholder: "Choose your type"
           options:
             - name: "Standard"
-              value: 
-            - name: "Quote"
-              value: quote
-            - name: "Status"
-              value: status
+              value:
             - name: "Photo"
               value: photo
-            - name: "Video"
-              value: video
       - name: "title"
         field:
           label: "Title"
