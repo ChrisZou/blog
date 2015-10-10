@@ -4,18 +4,20 @@ title:  "Ruby 文件操作 Cheatsheet"
 date:   2015-10-06 15:51
 comments: true
 ---
-每次都要查，真是蛋疼，不如一次性总结一下，以后再不记得就来这里找好了。
+每次都要查，真是蛋疼，不如一次性总结一下，以后再不记得就来这里找好了。  
 以下代码中需要用到的文件名：`filename = ‘testfile.txt’`
 
 - 读取其中的全部内容：`File.read(filename)`
 - 将一个字符串一次性写入这个文件：
 `File.write(filename, str)`
 - 读取文件内容，依次处理其中的每一行：
+
 ```
 File.foreach(filename) do |line|
     #process each line
 end
 ```
+
 - 判断文件是否存在：`File.exists?(filename)`
 - 删除文件：`File.delete(filename)`
 - 文件重命名：`File.rename(filename, new_name)`
@@ -37,14 +39,14 @@ end
 - 当前文件（正在执行的文件）的绝对路径：`File.expand_path(__FILE__)`
 - 当前文件（正在执行的文件）所在目录的绝对路径：`File.expand_path(File.dirname(__FILE__))`
 
-最后附上`File.open(filename, mode)` 中的mode各种取值以及含义：
-Mode |  Meaning
------+--------------------------------------------------------
-"r"  |  Read-only, starts at beginning of file  (default mode).
-"r+" |  Read-write, starts at beginning of file.
-"w"  |  Write-only, truncates existing file, to zero length or creates a new file for writing.
-"w+" |  Read-write, truncates existing file to zero lengthor creates a new file for reading and writing.
-"a"  |  Write-only, starts at end of file if file exists, otherwise creates a new file for writing.
-"a+" |  Read-write, starts at end of file if file exists, otherwise creates a new file for reading and writing.
- "b" |  Binary file mode (may appear with any of the key letters listed above). Suppresses EOL <-> CRLF conversion on Windows. And sets external encoding to ASCII-8BIT unless explicitly specified.
+最后附上`File.open(filename, mode)` 中的mode各种取值以及含义：  
+Mode |  Meaning  
+-----+--------------------------------------------------------  
+"r"  |  Read-only, starts at beginning of file  (default mode).  
+"r+" |  Read-write, starts at beginning of file.  
+"w"  |  Write-only, truncates existing file, to zero length or creates a new file for writing.  
+"w+" |  Read-write, truncates existing file to zero lengthor creates a new file for reading and writing.  
+"a"  |  Write-only, starts at end of file if file exists, otherwise creates a new file for writing.  
+"a+" |  Read-write, starts at end of file if file exists, otherwise creates a new file for reading and writing.  
+ "b" |  Binary file mode (may appear with any of the key letters listed above).   Suppresses EOL <-> CRLF conversion on Windows. And sets external encoding to ASCII-8BIT unless explicitly specified.  
  "t" |  Text file mode (may appear with any of the key letters listed above except "b").
