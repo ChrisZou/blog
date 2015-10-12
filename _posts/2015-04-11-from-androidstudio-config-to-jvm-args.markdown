@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  从AndroidStudio的启动参数开始，了解一下JVM的一些东西（内存使用，JIT等）
+tags: [tech, java, android]
 date:   2015-04-11 06:15:07 UTC
 comments: true
 ---
@@ -22,8 +23,8 @@ comments: true
 > The -Xms option sets the initial and minimum Java heap size. The Java heap (the “heap”) is the part of the memory where blocks of memory are allocated to objects and freed during garbage collection.
 
 就是JVM启动的起始堆内存，堆内存是分配给对象的内存。这里我把它改成了512m  
-  
-  
+
+
 ####**-Xmx750m**
 
 > This option sets the maximum Java heap size.

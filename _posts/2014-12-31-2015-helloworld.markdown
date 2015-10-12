@@ -2,7 +2,7 @@
 layout: post
 title:  "试着写点什么吧"
 date:   2014-12-31 15:50
-categories: jekyll update
+tags: [life]
 comments: true
 ---
 又到一年年末了，首先恭喜我成功的将2014年的一年大计成功的应用到2015年。。。

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  在Rails app中使用Bootstrap
+tags: [tech, rails]
 date:   2015-04-05 16:01:31 UTC
 comments: true
 ---
@@ -37,4 +38,3 @@ Resource就是Entity在Rails里面的叫法，类似于一个JavaBean的概念�
 是不是比Rails自己产生的style要漂亮多了？
 
 哦对了，个人认为Rails自带generate出来的scaffold.css实在是太丑了，还不如直接删了不带任何style。
-

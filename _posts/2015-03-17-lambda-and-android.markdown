@@ -2,6 +2,7 @@
 layout: post
 title:  Java 8的Lambda及其在Android 开发中的应用
 date:   2015-03-17 13:51:09 UTC
+tags: [tech, java, android]
 comments: true
 ---
 
@@ -100,7 +101,7 @@ public interface DuckInterface {
 以安卓里面的View.OnClickListener为例（它也是个Functional Interface）如果没有lambda，我们经常会这样使用的。
 
 ```Java
-View.OnClickListener onClickListener = new View.OnClickListener() {	
+View.OnClickListener onClickListener = new View.OnClickListener() {
 	@Override
 	public void onClick(View view) {
 		handleClick();
@@ -112,7 +113,7 @@ findViewById(R.id.someView).setOnClickListener(onClickListener);
 或者直接使用匿名内部类：
 
 ```Java
-findViewById(R.id.someView).setOnClickListener(new View.OnClickListener() {	
+findViewById(R.id.someView).setOnClickListener(new View.OnClickListener() {
 	@Override
 	public void onClick(View view) {
 		handleClick();

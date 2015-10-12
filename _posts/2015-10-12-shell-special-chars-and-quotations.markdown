@@ -2,6 +2,7 @@
 layout: post
 title: "Shell命令行中的特殊字符及其转义(去除特殊含义)"
 date: "2015-10-12"
+tags: [tech, linux, shell]
 ---
 
 我们知道,在一个shell命令是由命令名和它的参数组成的, 比如 `cat testfile`, 其中`cat`是命令名, `testfile`是参数. shell将参数`testfile`传递给`cat`命令. 但是, 如果参数中含有特殊字符, 比如说`*`, `*`我们知道,是表示任意多个(包括0个)任意字符. 那么shell的工作方式是,它会对这些特殊字符进行预先处理, 然后再将处理的结果传给那个命令.

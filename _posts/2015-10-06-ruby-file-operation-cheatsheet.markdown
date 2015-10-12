@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Ruby 文件操作 Cheatsheet"
+tags: [tech, ruby]
 date:   2015-10-06 15:51
 comments: true
 ---

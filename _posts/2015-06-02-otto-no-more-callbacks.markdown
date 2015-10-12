@@ -2,6 +2,7 @@
 layout: post
 title: "Otto: No More Callbacks"
 date: 2015-06-02T10:21:07+08:00
+tags: [tech, java, android]
 comments: true
 ---
 
@@ -18,14 +19,14 @@ public class TasksActivity extends Activity {
 			public void onError(String msg, int code) {
 				// handle error
 			}
-			
+
 			public void onSucceed(List<Task> tasks) {
 				updateTaskList(tasks);
 			}
 		});
 		model.loadTasks();
 	}
-	
+
 	private void updateTaskList(List<Task> tasks) {
 		//Update the task list view
 	}
@@ -40,12 +41,12 @@ public class TaskModel {
 	public void loadTasks() {
 		//load tasks from server, when result returns, check if callback is not null and call callback
 	}
-	
+
 	private TaskCallback mTaskCallback;
 	public void setTaskCallback(TaskCallback callback) {
 		this.mTaskCallback = callback;
 	}
-	
+
 	public static interface TaskCallback {
 		public void onError(String errorMsg, int code);
 		public void onSucceed(List<Task> tasks);
@@ -73,7 +74,7 @@ public class TasksActivity extends Activity {
 	private void loadTasks() {
 		new TaskModel().loadTasks();
 	}
-	
+
 	// 用@Subscribe 来表示用这个方法处理某种事件，这种事件就是你的方法的参数。
 	// 此外，public void是必须的，方法名可以自己随便取
  	@Subscribe
@@ -81,12 +82,12 @@ public class TasksActivity extends Activity {
 		List<Task> tasks = event.tasks;
 		// Update the task list view
 	}
-	
+
 	@Subscribe
 	public void onTaskLoadError(TaskLoadErrorEvent event) {
 		//handler error
 	}
-	
+
 	public void onDestroy() {
 		OttoHelper.unregister(this)
 	}
@@ -110,15 +111,15 @@ public class OttoHelper {
 	public void static register(Object obj) {
 		sBusInstance.register(obj);
 	}
-	
+
 	public void static unregister(Object obj) {
 		sBusInstance.register(obj);
 	}
-	
+
 	public static void post(Object event) {
 		sBusInstance.post(event);
 	}
-	
+
 }
 
 public class TaskLoadedEvent {
@@ -146,12 +147,12 @@ public class TasksActivity extends Activity {
 		List<Task> tasks = event.tasks;
 		// Update the task list view
 	}
-	
+
 	@Subscribe
 	public void onTaskLoadError(TaskLoadErrorEvent event) {
 		//handler error
 	}
-	
+
 	@Subscribe
 	public void onSomeEvent(Object event) {
 		//handle some-event
