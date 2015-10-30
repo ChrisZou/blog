@@ -11,7 +11,7 @@ comments: true
 ## 亲密性：
 亲密性原则有两点内容：1. 相同或类似的东西放在一起；2. 不同的东西不要放在一起。
 以下是一些使用亲密性原则前后的设计实例对比。
-![approximate1](/images/2015/10/approximate1.jpg)￼
+![approximate1](images/2015/10/approximate1.jpg)￼
 上图这是一个读书会传单的例子，左边的图没有任何组织性。右边的图把每一本书的内容放在一起，跟其他书用一定的空白隔开，最用的地址信息、联系人信息又跟书本信息隔开，实现了信息的组织性，同时具有更高的可读性。一下的例子也是类似，大家感受一下。
 ![approximate2](/images/2015/10/approximate2.jpg)￼
 ![approximate3](/images/2015/10/approximate3.jpg)￼
