@@ -3,7 +3,7 @@ layout: post
 title: 用Robolectric来做Android unit testing      
 tags: [tech, java, android, testing]
 date: 2015-06-15T05:52:42+08:00
-comments: true
+comments: 'duoshuo'
 ---
 
 作为一只本科非计算机专业的程序猿，手动写单元测试是我从来没接触过的东西，甚至在几个月前，我都不知道单元测试是什么东西。倒不是说没听过这个词，也不是不知道它的大概是什么东西——“用来测试一个方法，或者是一小块代码的测试代码”。然而真正是怎么做的？我并没有一个概念，或者说并没有一个感觉。    
