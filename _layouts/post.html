@@ -50,7 +50,10 @@
                         {% if site.share %}{% include share.html %}{% endif %}
                         {% include signoff.html %} 
                         <!-- /#disqus_thread -->
-                        {% if page.comments %}{% include duoshuo_comments.html %}{% endif %}
+                        {% if page.comments == 'duoshuo' %}{% include duoshuo_comments.html %}
+                        {% else %}
+                        {% include youyan_comments.html %}
+                        {% endif %}
                     </footer>
             </article>
     </div>
