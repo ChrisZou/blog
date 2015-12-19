@@ -9,7 +9,7 @@ if(ARGV.length==0)
     exit(1)
 end
 
-title = ARGV[0]
+title = ARGV.join '-'
 date = Date.today.to_s
 file = "#{date}-#{title}.md"
 path = "_posts/#{file}"
