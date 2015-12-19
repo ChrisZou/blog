@@ -14,15 +14,14 @@ date = Date.today.to_s
 file = "#{date}-#{title}.md"
 path = "_posts/#{file}"
 
-header_content = %(---
+header_content = %[---
 layout: post
-title: 
+title: #{title.gsub('-', ' ')}
 date: #{DateTime.now.to_s}
 comments: true
 ---
-)
+]
 
 File.open(path, 'w') do |f|
     f.write(header_content)
 end
-
